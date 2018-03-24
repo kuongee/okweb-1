@@ -9,7 +9,8 @@ var connection = mysql.createConnection({
     host: 'localhost',
     database: 'devdb',
     user: 'devuser',
-    password: 'devpass'
+    password: 'devpass',
+    port: '3307'
 });
 connection.connect();
 
