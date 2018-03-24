@@ -39,6 +39,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // 루트 경로 처리
+//app.use('/list', require('./routes/board')); // router 빼내기
 app.get('/', defaultPage);
 app.get('/write', defaultPage);
 app.get('/list/*', defaultPage);
@@ -147,7 +148,7 @@ function count(res, list) {
 
 
 
-//app.use('/list', require('./routes/board')); // router 빼내기
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
