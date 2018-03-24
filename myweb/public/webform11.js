@@ -14,11 +14,6 @@ function init() {
             });
     });
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 7ea098f2cd82b3ad5cbebe9acd3e8a5ab150bd01
     $('#btnList').on('click', function () {
         list(1);
     });
@@ -134,8 +129,4 @@ function list(pageNo, isBack) {
 function write() {
     $('[id$=Panel]').hide();
     $('#writePanel').show();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7ea098f2cd82b3ad5cbebe9acd3e8a5ab150bd01
