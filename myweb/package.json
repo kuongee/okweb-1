@@ -11,7 +11,11 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
+<<<<<<< HEAD
     "morgan": "~1.9.0",
     "mysql": "^2.15.0"
+=======
+    "morgan": "~1.9.0"
+>>>>>>> 7ea098f2cd82b3ad5cbebe9acd3e8a5ab150bd01
   }
 }

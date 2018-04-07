@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+<<<<<<< HEAD
 var bodyParser = require('body-parser');
 
 
@@ -26,6 +27,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+=======
+var app = express();
+
+>>>>>>> 7ea098f2cd82b3ad5cbebe9acd3e8a5ab150bd01
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -34,6 +39,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+<<<<<<< HEAD
 
 // 정적인 파일 경로 public
 app.use(express.static(path.join(__dirname, 'public')));
@@ -149,6 +155,13 @@ function count(res, list) {
 
 
 
+=======
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
+app.use('/list', require('./routes/board'));
+>>>>>>> 7ea098f2cd82b3ad5cbebe9acd3e8a5ab150bd01
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
